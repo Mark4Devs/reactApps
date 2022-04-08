@@ -27,7 +27,7 @@ switch ($method) {
       $name = $_POST["name"];
       $date = $_POST["date"];
      
-      $sql = "insert into comments (FirstName, comment, dates) values ('$name', '$comment', '$date')"; 
+      $sql = "insert into comments (comments, dates, FirstName) values ('$comment', '$date', '$name')"; 
       break;
 }
 
